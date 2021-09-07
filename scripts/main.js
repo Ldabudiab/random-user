@@ -1,5 +1,5 @@
 import { getUsers } from "./datamanager.js";
-import { users, userList } from "./userdetail.js";
+import { userList } from "./userdetail.js";
 
 
 
