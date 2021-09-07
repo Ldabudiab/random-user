@@ -1,4 +1,4 @@
-
+import { dateConverter } from "./date.js";
 
 export const users = (resultsObject) => {
 
@@ -8,7 +8,7 @@ export const users = (resultsObject) => {
             <h2 class="user__name">${resultsObject.name.first}</h2>
         </header>
         <img class="user__image" src="${resultsObject.picture.medium}" />
-        <h3 class="user_date">${resultsObject.registered.date}</h3>
+        <h3 class="user_date">${dateConverter(resultsObject.registered.date)}</h3>
       </section>
     `
   }
