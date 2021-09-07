@@ -2,6 +2,20 @@ import { getUsers } from "./datamanager.js";
 import { users, userList } from "./userdetail.js";
 
 
+
+const applicationElement = document.querySelector(".main",);
+
+applicationElement.addEventListener("click", event => {
+    
+	if (event.target.id === "1" ) {
+       
+       window.location.reload();
+    
+		
+	
+}})
+
+
 const showUsers = () => {
 
     const postElement = document.querySelector(".user");
